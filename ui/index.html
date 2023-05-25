@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cw notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="cwnotes">
+    <div class="notes-content">
+        <div class="note">
+            <div class="header">
+                <h3 id="title"></h3>
+            </div>
+            <div class="text-body">
+                <div class ="note-body"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cwnotes-writer">
+    <div class="notes-content">
+        <div class="note">
+            <div class="header">
+                <h3 id="title"><input id="title-input" type="text" placeholder="title"></input></h3>
+            </div>
+            <div class="text-body">
+                <textarea id="body-input" name="textarea" rows="4" cols="50" placeholder="Type something nice"></textarea>
+            </div>
+            <div class="button-holder">
+                <div class="button" onclick="handleConfirm()">Confirm</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../config.js"></script>
+<script src="./app.js"></script>
+</html>
