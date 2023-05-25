@@ -39,19 +39,11 @@ RegisterNetEvent("cw-notes:client:openInteraction", function(data, nui)
     end
 end)
 
--- RegisterNetEvent("cw-notes:client:openInteraction", function()
-    
---     local input = lib.inputDialog('Note Writer', Config.Inputs)
---     local data = { title = input[1], text = input[2] }
---     TriggerServerEvent("cw-notes:server:createCard", data)
--- end)
-
 RegisterNUICallback("escape", function()
     TriggerEvent('animations:client:EmoteCommandStart', {'c'})
     SetNuiFocus(false)
     noteIsOpen = false
 end)
-
 
 RegisterNUICallback('confirm', function(data, cb)
     if useDebug then

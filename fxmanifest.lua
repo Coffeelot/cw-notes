@@ -4,7 +4,6 @@ game 'gta5'
 ui_page 'ui/index.html'
 
 shared_scripts {
-    '@qb-core/shared/locale.lua',
     'config.lua',
 }
 
@@ -22,5 +21,3 @@ files {
 	'ui/app.js',
 	'ui/assets/img/*.png'
 }
-
-dependency 'qb-target'
