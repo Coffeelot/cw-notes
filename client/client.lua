@@ -54,8 +54,6 @@ RegisterNUICallback('confirm', function(data, cb)
         title = data.title,
         text = data.text,
     }
-    exports['sundown-utils']:hasBadWords(note.title, 'notes')
-    exports['sundown-utils']:hasBadWords(note.text, 'notes')
     if useDebug then
        print('title', note.title)
        print('text', note.text)
