@@ -9,10 +9,6 @@ The script has support for QB inventory and OX inventory, you can toggle this in
 ## Video 📽
 [![YOUTUBE VIDEO](http://img.youtube.com/vi/hqhn61qv5uE/0.jpg)](https://youtu.be/hqhn61qv5uE)
 
-## Images 🖼
-![](https://media.discordapp.net/attachments/1100810645282230322/1111387618698088488/image.png)
-![](https://media.discordapp.net/attachments/1100810645282230322/1111387594467590296/image.png)
-
 # Developed by Coffeelot and Wuggie
 [More scripts by us](https://github.com/stars/Coffeelot/lists/cw-scripts)  👈\
 [Support, updates and script previews](https://discord.gg/FJY4mtjaKr) 👈
