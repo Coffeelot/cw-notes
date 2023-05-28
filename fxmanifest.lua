@@ -21,3 +21,8 @@ files {
 	'ui/app.js',
 	'ui/assets/img/*.png'
 }
+
+dependency{
+    'qb-menu',
+    -- 'cw-performance' -- commented out cause it's easier to tweak performance when it's off
+}
