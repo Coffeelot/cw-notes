@@ -21,7 +21,7 @@ RegisterNetEvent("cw-notes:client:openNote", function(data, nui)
             print(QBCore.Debug(data))
         end
         SetNuiFocus(true,true)
-        SendNUIMessage({nui = 'cwnotes', information = info})
+        SendNUIMessage({nui = 'cwnotes', information = info, hasNotepad = QBCore.Functions.HasItem(Config.Items.notepad, 1)})
         noteIsOpen = true
     end
 end)
@@ -34,7 +34,7 @@ RegisterNetEvent("cw-notes:client:openInteraction", function(data, nui)
             print(QBCore.Debug(data))
         end
         SetNuiFocus(true,true)
-        SendNUIMessage({nui = 'cwnoteswrite'})
+        SendNUIMessage({nui = 'cwnoteswrite', information = data})
         noteIsOpen = true
     end
 end)
@@ -54,10 +54,26 @@ RegisterNUICallback('confirm', function(data, cb)
         title = data.title,
         text = data.text,
     }
+    exports['sundown-utils']:hasBadWords(note.title, 'notes')
+    exports['sundown-utils']:hasBadWords(note.text, 'notes')
     if useDebug then
        print('title', note.title)
        print('text', note.text)
     end
     TriggerServerEvent('cw-notes:server:createNote', note)
+    cb("ok")
+end)
+
+RegisterNUICallback('createCopy', function(data, cb)
+    if useDebug then
+        print('Creating copy')
+        print('title', data.title)
+        print('text', data.text)
+     end
+    local note = {
+        title = data.title,
+        text = data.text,
+    }
+    TriggerEvent('cw-notes:client:openInteraction', note)
     cb("ok")
 end)
