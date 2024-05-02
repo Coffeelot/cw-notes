@@ -1,10 +1,11 @@
+### ⭐ Check out our [Tebex store](https://cw-scripts.tebex.io/category/2523396) for some cheap scripts ⭐
+
 # cw-notes 📓
 A lil tiny script that has two items in it: A notepad and notes.
 The script is pretty simple, you use the notepad and you can type some notes. The text and title are saved in the item metadata, which means you don't need to save into the database etc. 
 
 The script has support for QB inventory and OX inventory, you can toggle this in the config.
 
-### **See the script in action on [Sundown RP](https://discord.gg/CZNh8kcSGK) 🌆**
 # Preview 
 ## Video 📽
 [![YOUTUBE VIDEO](http://img.youtube.com/vi/hqhn61qv5uE/0.jpg)](https://youtu.be/hqhn61qv5uE)
