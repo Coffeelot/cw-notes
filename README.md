@@ -10,18 +10,17 @@ The script has support for QB inventory and OX inventory, you can toggle this in
 ## Video 📽
 [![YOUTUBE VIDEO](http://img.youtube.com/vi/hqhn61qv5uE/0.jpg)](https://youtu.be/hqhn61qv5uE)
 
-# Developed by Coffeelot and Wuggie
-[More scripts by us](https://github.com/stars/Coffeelot/lists/cw-scripts)  👈\
-[Support, updates and script previews](https://discord.gg/FJY4mtjaKr) 👈
-
-**Support, updates and script previews**:
-
-[![Join The discord!](https://cdn.discordapp.com/attachments/977876510620909579/1013102122985857064/discordJoin.png)](https://discord.gg/FJY4mtjaKr )
+# Links
+### ⭐ Check out our [Tebex store](https://cw-scripts.tebex.io/category/2523396) for some cheap scripts ⭐
 
 
-**All our scripts are and will remain free**. If you want to support what we do, you can buy us a coffee here:
+### [More free scripts](https://github.com/stars/Coffeelot/lists/cw-scripts)  👈
 
-[![Buy Us a Coffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg)](https://www.buymeacoffee.com/cwscriptbois )
+### Support, updates and script previews:
+
+<a href="https://discord.gg/FJY4mtjaKr"> <img src="https://media.discordapp.net/attachments/1202695794537537568/1285652389080334337/discord.png?ex=66eb0c97&is=66e9bb17&hm=b1b2c17715f169f57cf646bb9785b0bf833b2e4037ef47609100ec8e902371df&=&format=webp" width="200"></a>
+
+
 # Config 🔧
 
 # QB INV ❗📦
