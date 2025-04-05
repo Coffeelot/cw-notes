@@ -1,38 +1,22 @@
-local QBCore = exports['qb-core']:GetCoreObject()
 local noteIsOpen = false
 local useDebug = Config.Debug
 
-if Config.Inventory == 'ox' then
-    AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-        exports.ox_inventory:displayMetadata('title', 'Title')
-    end)
-end
-
-RegisterNetEvent("cw-notes:client:openNote", function(data, nui)
+RegisterNetEvent("cw-notes:client:openNote", function(metadata, hasNotepad)
     if not noteIsOpen then
-        QBCore.Functions.Notify("Press ESC to close")
-        local info
-        if Config.Inventory == 'ox' then
-            info = data.metadata
-        else
-            info = data.info
-        end
+        notify("Press [ESC] to close")
         if useDebug then
-            print(QBCore.Debug(data))
+            print(json.encode(metadata, {indent=true}))
         end
         SetNuiFocus(true,true)
-        SendNUIMessage({nui = 'cwnotes', information = info, hasNotepad = QBCore.Functions.HasItem(Config.Items.notepad, 1)})
+        SendNUIMessage({nui = 'cwnotes', information = metadata, hasNotepad = hasNotepad})
         noteIsOpen = true
     end
 end)
 
-RegisterNetEvent("cw-notes:client:openInteraction", function(data, nui)
+RegisterNetEvent("cw-notes:client:openInteraction", function(data)
     if not noteIsOpen then
-        QBCore.Functions.Notify("Press ESC to close")
+        notify("Press [ESC] to close")
 	    TriggerEvent('animations:client:EmoteCommandStart', {'notepad'})
-        if useDebug then
-            print(QBCore.Debug(data))
-        end
         SetNuiFocus(true,true)
         SendNUIMessage({nui = 'cwnoteswrite', information = data})
         noteIsOpen = true
