@@ -11,6 +11,10 @@ local function clearProp()
         DeleteEntity(attachedNotepad)
         attachedNotepad = 0
     end
+    if attachedPen and DoesEntityExist(attachedPen) then
+        DeleteEntity(attachedPen)
+        attachedPen = 0
+    end
 end
 
 local function attachNotepad()
