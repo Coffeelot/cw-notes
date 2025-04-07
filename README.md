@@ -1,6 +1,9 @@
 ### ⭐ Check out our [Tebex store](https://cw-scripts.tebex.io/category/2523396) for some cheap scripts ⭐
 
 # cw-notes 📓
+
+> Supports QB core, Ox Core and QBox core
+
 A lil tiny script that has two items in it: A notepad and notes.
 The script is pretty simple, you use the notepad and you can type some notes. The text and title are saved in the item metadata, which means you don't need to save into the database etc. 
 
