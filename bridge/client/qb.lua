@@ -9,10 +9,6 @@ RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
     end
 end)
 
-function getCitizenId()
-    return QBCore.Functions.GetPlayerData().citizenid
-end
-
 function notify(text, type)
     if Config.OxLibNotify then
         lib.notify({

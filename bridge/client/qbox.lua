@@ -7,10 +7,6 @@ RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
     exports.ox_inventory:displayMetadata('title', 'Title')
 end)
 
-function getCitizenId()
-    return QBX.PlayerData.citizenid
-end
-
 function notify(text, type)
     lib.notify({
         title = text,

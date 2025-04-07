@@ -7,11 +7,6 @@ RegisterNetEvent('ox:playerLoaded', function()
     exports.ox_inventory:displayMetadata('title', 'Title')
 end)
 
-function getCitizenId()
-    local player = Ox.GetPlayer()
-    return player.stateId
-end
-
 function notify(text, type)
     lib.notify({
         title = text,

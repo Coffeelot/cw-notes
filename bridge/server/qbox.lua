@@ -5,12 +5,6 @@ exports.qbx_core:CreateUseableItem(Config.Items.note, function(source, item)
     TriggerClientEvent("cw-notes:client:openNote", source, item.metadata, hasNotepad)
 end)
 
--- Fetches the CitizenId by Source
-function getCitizenId(src)
-    local player = exports.qbx_core:GetPlayer(tonumber(src))
-    return player.PlayerData.citizenid
-end
-
 function hasNotepadItem(src)
     local amount = exports.ox_inventory:GetItemCount(src, Config.Items.notepad)
     if Config.Debug then print('Has notepad: ', amount > 0) end

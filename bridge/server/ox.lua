@@ -13,14 +13,6 @@ AddEventHandler('ox_inventory:usedItem', function(playerId, name, slotId, metada
     end
 end)
 
--- Fetches the CitizenId by Source
-function getCitizenId(src)
-    local player = Ox.GetPlayer(tonumber(src))
-    if not player then return nil end
-
-    return player.stateId
-end
-
 function hasNotepadItem(src)
     local amount = exports.ox_inventory:GetItemCount(src, Config.Items.notepad)
     if Config.Debug then print('Has notepad: ', amount > 0) end

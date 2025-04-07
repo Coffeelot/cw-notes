@@ -12,12 +12,6 @@ QBCore.Functions.CreateUseableItem(Config.Items.notepad, function(source, item)
     TriggerClientEvent("cw-notes:client:openInteraction", source)
 end)
 
--- Fetches the CitizenId by Source
-function getCitizenId(src)
-    local Player = QBCore.Functions.GetPlayer(src)
-    return Player.PlayerData.citizenid
-end
-
 function hasNotepadItem(src)
     if Config.Inventory == 'ox' then
         local amount = exports.ox_inventory:GetItemCount(src, Config.Items.notepad)
