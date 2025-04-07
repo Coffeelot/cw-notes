@@ -5,6 +5,10 @@ exports.qbx_core:CreateUseableItem(Config.Items.note, function(source, item)
     TriggerClientEvent("cw-notes:client:openNote", source, item.metadata, hasNotepad)
 end)
 
+exports.qbx_core:CreateUseableItem(Config.Items.notepad, function(source)
+	TriggerClientEvent("cw-notes:client:openInteraction", source)
+end)
+
 function hasNotepadItem(src)
     local amount = exports.ox_inventory:GetItemCount(src, Config.Items.notepad)
     if Config.Debug then print('Has notepad: ', amount > 0) end
